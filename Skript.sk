@@ -1,0 +1,16 @@
+command /werbung <text>:
+	usage: &c&lITEMSUCHT &8» &7Bitte verwende /werbung <Text>
+	aliases: plotwerbung
+	permission: werbung.use
+	permission message: &c&lITEMSUCHT &8» &7Dazu hast du keine Rechte!
+	trigger:
+		broadcast " "
+		broadcast "&c&lITEMSUCHT &8&L» &8&l--------------------"
+		broadcast "&c&lITEMSUCHT &8&L»"
+		broadcast "&c&lITEMSUCHT &8&L» &7Nachricht von &c%player%&7:"
+		broadcast "&c&lITEMSUCHT &8&L» &7%argument%"
+		broadcast "&c&lITEMSUCHT &8&L»"
+		json("@a", "&c&lITEMSUCHT &8&L» &5TELEPORTIEREN &7(klickbar)||cmd:/p h %player%")
+		broadcast "&c&lITEMSUCHT &8&L»"
+		broadcast "&c&lITEMSUCHT &8&L» &8&l--------------------"
+		broadcast " "
